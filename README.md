@@ -1,10 +1,10 @@
 # Albanian Sign Language Detection with Azure Custom Vision
-*A hands-on guide for creating a sign language detection model using Azure Custom Vision.*
+*A hands-on guide for creating a hand sign detection for the Albanian language using Azure CustomVision*
 
 ---
 
 ## Overview
-This repository documents the steps for training an **Albanian Sign Language detection model** using Azure Custom Vision. Students will learn to:
+This repository documents the steps for training an **Albanian Sign Language detection model** using Azure Custom Vision. The process includes: 
 1. Upload hand sign images to Azure Custom Vision.
 2. Annotate signs with labels.
 3. Train and evaluate a model.
@@ -39,10 +39,10 @@ This repository documents the steps for training an **Albanian Sign Language det
 
 ---
 
-### 2. Upload and Annotate Images
+### 2. Upload and annotate images
 1. Click **Add Images** and upload your 20 Albanian sign images.
-2. **Annotate each image**:
-   - For object detection: Draw bounding boxes around the hand in each image and assign labels (e.g., "A", "B", "1", "2").
+2. **Annotate each image**: Draw bounding boxes around the hand in each image and assign labels (e.g., "A", "B", "1", "2").
+
 
 
 ![Annotation Screenshot](/docs/images/annotate.png)
