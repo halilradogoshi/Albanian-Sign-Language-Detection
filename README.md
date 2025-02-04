@@ -31,20 +31,19 @@ This repository documents the steps for training an **Albanian Sign Language det
    - **Name**: `Albanian-Signs`
    - **Resource**: Select an existing Azure resource or create a new one.
    - **Project Type**: `Object Detection` .
-   - **Classification Types**: `Multiclass`.
-   - **Domains**: `General (compact)` for easy export.
+   - **Domains**: `General` or `General (compact)` for easy export.
    - Click **Create Project**.
 
 ![Create Project Screenshot](/docs/images/create-project.png)
+
 
 ---
 
 ### 2. Upload and Annotate Images
 1. Click **Add Images** and upload your 20 Albanian sign images.
 2. **Annotate each image**:
-   - For classification: Tag each image with the corresponding label (e.g., "A", "B", "1", "2").
-   - For object detection: Draw bounding boxes around the hand in each image and assign labels.
-3. Split the dataset into **Training** and **Testing** sets (e.g., 80% training, 20% testing).
+   - For object detection: Draw bounding boxes around the hand in each image and assign labels (e.g., "A", "B", "1", "2").
+
 
 ![Annotation Screenshot](/docs/images/annotate.png)
 
