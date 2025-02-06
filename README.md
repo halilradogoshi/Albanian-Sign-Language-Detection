@@ -10,7 +10,7 @@ This repository documents the steps for training an **Albanian Sign Language det
 3. Train and evaluate a model.
 4. Export the model for future use.
 
-**Target Audience**: Students participating in the Gjakova Makeathon.
+**Target Audience**: Students that would like to learn to create AI projects with CustomVision. 
 
 ---
 
