@@ -16,9 +16,10 @@ This repository documents the steps for training an **Albanian Sign Language det
 
 ## Prerequisites
 - An **Azure account** (free trial: https://azure.microsoft.com/free/).
-- **20 images** of Albanian hand signs (e.g., letters, numbers).
-  - Example: Use photos of participants’ hands or open-source sign language datasets.
-- Basic familiarity with Azure services.
+- Basic familiarity with **Azure services**, mainly to create a CognitiveServices resource within a Resource Group. 
+- **Images** of Albanian hand signs (e.g., letters, numbers, words).
+
+
 
 ---
 
@@ -28,24 +29,27 @@ This repository documents the steps for training an **Albanian Sign Language det
 1. Go to [Azure Custom Vision](https://www.customvision.ai/).
 2. Sign in with your Azure account.
 3. Click **New Project**:
-   - **Name**: `Albanian-Signs`
-   - **Resource**: Select an existing Azure resource or create a new one.
+   - **Name**: `Albanian-Sign-Language-Detection`
+   - **Description**:`Custom Vision project for Albanian sign language detection.`
+   - **Resource**: Select an existing Azure resource or create a new one (see Prerequisits).
    - **Project Type**: `Object Detection` .
    - **Domains**: `General` or `General (compact)` for easy export.
    - Click **Create Project**.
 
-![Create Project Screenshot](/docs/images/create-project.png)
+![Create project screenshot](/docs/images/create-project.png)
 
 
 ---
 
-### 2. Upload and annotate images
+### 2. Upload images
 1. Click **Add Images** and upload your 20 Albanian sign images.
-2. **Annotate each image**: Draw bounding boxes around the hand in each image and assign labels (e.g., "A", "B", "1", "2").
 
+![Upload images screenshot](/docs/images/upload.png)
 
+### 3. Annotate images
+1. **Annotate each image**: Draw bounding boxes around the hand in each image and assign labels (e.g., "A", "B", "1", "2").
 
-![Annotation Screenshot](/docs/images/annotate.png)
+![Annotation screenshot](/docs/images/annotate.png)
 
 ---
 
@@ -54,6 +58,9 @@ This repository documents the steps for training an **Albanian Sign Language det
 2. Select **Quick Training** (fast but less accurate) or **Advanced Training** (requires more time/data).
 3. Wait for training to complete. Review the performance metrics (precision, recall).
 
+![Train modell screenshot](/docs/images/train-modell.png)
+
+![Review performance screenshot](/docs/images/modell-performance.png)
 ---
 
 ### 4. Evaluate and Test
@@ -61,7 +68,7 @@ This repository documents the steps for training an **Albanian Sign Language det
 2. Test the model with the **Quick Test** feature:
    - Upload a new image to see if the model predicts the correct sign.
 
-![Quick Test Screenshot](/docs/images/test.png)
+![Quick test screenshot](/docs/images/test.png)
 
 ---
 
@@ -73,7 +80,7 @@ This repository documents the steps for training an **Albanian Sign Language det
    - **Dockerfile** (for containers)
 3. Save the exported model files for future use.
 
-![Export Model Screenshot](/docs/images/export.png)
+![Export model screenshot](/docs/images/export.png)
 
 ---
 
